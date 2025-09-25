@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdcae1;
+    color: black;
+    text-align: center;
+}
+
+header {
+    background-color: #d2bdbd;
+    color: rgb(0, 0, 0);
+    padding:  2rem 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #e4599a;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav ul li {
+    color: #8a8cfe;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.catalogo  p {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 280px); 
+  gap: 40px; 
+  justify-content: center; 
+}
+
+.producto {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 280px;
+  text-align: center;
+  
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.producto h3 {
+  color: #ff1493;
+  margin: 10px 0 5px;
+}
+
+.producto .precio {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.producto button {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.producto button:hover {
+  background: #ff007f;
+}
+
+footer {
+    background-color: #eb8abc;
+    color: rgb(228, 228, 228);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+body {
+    margin: 0;
+    padding-bottom: 70px;
+}
