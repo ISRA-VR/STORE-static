@@ -1,2 +1,16 @@
 # STORE-static
-Pagina web con HTML-CSS basico
+
+"Taller de Construcción Colaborativa"
+Metodología: Aprendizaje Basado en Proyectos (ABP) + Trabajo colaborativo
+
+Construido con HTML5 semántico y CSS básico
+
+ELABORADO POR:
+ISRAEL VALERDI ROMAN
+DIANA GUADALUPE VELEZ SERRANO
+
+UNIVERSIDAD TECNOLOGICA DE TECAMACHALCO 
+DESARROLLO DE SOFTWARE MULTIPLATAFORMA
+4B
+
+FECHA: 26 DE SEPTIEMBRE DEL 2025
