@@ -1,16 +1,43 @@
-# STORE-static
+# 🛍️ STORE-static: Tienda en Línea Estática (Demo)
 
-"Taller de Construcción Colaborativa"
-Metodología: Aprendizaje Basado en Proyectos (ABP) + Trabajo colaborativo
+## 🚀 Acerca del Proyecto
 
-Construido con HTML5 semántico y CSS básico
+Este proyecto fue desarrollado como parte de un **"Taller de Construcción Colaborativa"**, aplicando una metodología de **Aprendizaje Basado en Proyectos (ABP)** y **Trabajo Colaborativo**.
 
-ELABORADO POR:
-ISRAEL VALERDI ROMAN
-DIANA GUADALUPE VELEZ SERRANO
+**STORE-static** es una **demostración de una página web estática** que simula una tienda en línea moderna, enfocada en la práctica de fundamentos web y el desarrollo de habilidades en equipo.
 
-UNIVERSIDAD TECNOLOGICA DE TECAMACHALCO 
-DESARROLLO DE SOFTWARE MULTIPLATAFORMA
-4B
+---
 
-FECHA: 26 DE SEPTIEMBRE DEL 2025
+## ✨ Tecnologías Utilizadas
+
+Este *front-end* fue construido utilizando solamente los pilares de la web, garantizando una base sólida y accesible:
+
+| Tecnología | Propósito |
+| :--- | :--- |
+| **HTML5** | Estructura semántica, asegurando accesibilidad y orden. |
+| **CSS3** | Estilizado básico para presentación y diseño. |
+
+---
+
+## 🏗️ Estructura del Proyecto
+
+El código está optimizado para ser **limpio y fácil de entender**, priorizando las buenas prácticas de la **semántica de HTML5** y la modularidad del CSS.
+
+---
+
+## 👥 Equipo y Contexto Académico
+
+| Rol | Integrante |
+| :--- | :--- |
+| Desarrollador/a | **Israel Valerdi Roman** |
+| Desarrollador/a | **Diana Guadalupe Velez Serrano** |
+
+**Institución:** Universidad Tecnológica de Tecamachalco
+**Carrera:** Desarrollo de Software Multiplataforma
+**Grupo:** 4B
+
+---
+
+## 📅 Fecha de Elaboración
+
+26 de septiembre de 2025
