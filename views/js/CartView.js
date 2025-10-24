@@ -1,4 +1,4 @@
-// View: CartView - Maneja la actualización del DOM relacionada con el carrito
+// View: CartView - Maneja la actualización del DOM relacionada con el carritoo
 class CartView {
     constructor() {
         this.cartCountElement = document.getElementById('cart-count');

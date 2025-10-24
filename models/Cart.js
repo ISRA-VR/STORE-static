@@ -1,4 +1,4 @@
-// Model: Cart - Representa el carrito de compras
+// Model: Cart - Representa el carrito de compras.
 class Cart {
     constructor() {
         this.items = [];

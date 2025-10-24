@@ -1,4 +1,4 @@
-// Controller: CartController - Maneja la lógica del carrito
+// Controller: CartController - Maneja la lógica del carrito.
 class CartController {
     constructor() {
         this.cart = new Cart();
