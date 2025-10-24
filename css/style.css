@@ -161,3 +161,123 @@ footer nav ul li a {
 footer nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+/* ==================== ESTILOS MVC - CARRITO ==================== */
+
+/* Carrito en el header */
+.cart-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-badge {
+    background: #dc143c;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    min-width: 24px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Animación de pulso para el badge */
+.cart-badge.pulse {
+    animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animación para el botón al hacer clic */
+.buy-btn.clicked {
+    animation: buttonClick 0.3s ease-in-out;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+        background: #dc143c;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Contenedor de notificaciones */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos de notificación */
+.notification {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s ease-in-out;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification-icon {
+    font-size: 1.5rem;
+}
+
+.notification-message {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Efecto hover en productos mejorado */
+.producto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+}
+
+/* Cursor pointer para botones */
+.producto button,
+.cart-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

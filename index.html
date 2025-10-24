@@ -21,7 +21,7 @@
             <li><a href="#">Novedades</a></li>
             <li><a href="#">Promociones</a></li>
             <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a href="#" class="cart-link">🛒 Carrito <span id="cart-count" class="cart-badge">0</span></a></li>
         </ul>
     </nav>
 </header>
@@ -37,67 +37,115 @@
                 <img src="img/IMG-20250816-WA0001.jpg" alt="Base de maquillaje líquida">
                 <h3>Balsamo color rojo</h3>
                 <p class="precio">$25.99</p>
-                <button type="button" aria-label="Agregar Base de Maquillaje Líquida al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="1" 
+                    data-name="Balsamo color rojo" 
+                    data-price="25.99" 
+                    data-image="img/IMG-20250816-WA0001.jpg"
+                    aria-label="Agregar Balsamo color rojo al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250820-WA0004.jpg" alt="Labial mate de larga duración">
                 <h3>Espejo con forma de corazon</h3>
                 <p class="precio">$18.50</p>
-                <button type="button" aria-label="Agregar Labial Mate Larga Duración al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="2" 
+                    data-name="Espejo con forma de corazon" 
+                    data-price="18.50" 
+                    data-image="img/IMG-20250820-WA0004.jpg"
+                    aria-label="Agregar Espejo con forma de corazon al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250820-WA0005.jpg" alt="Paleta de sombras para ojos">
                 <h3>Esponja para desmaquillar</h3>
                 <p class="precio">$32.00</p>
-                <button type="button" aria-label="Agregar Paleta de Sombras al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="3" 
+                    data-name="Esponja para desmaquillar" 
+                    data-price="32.00" 
+                    data-image="img/IMG-20250820-WA0005.jpg"
+                    aria-label="Agregar Esponja para desmaquillar al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img//IMG-20250820-WA0006.jpg" alt="Máscara de pestañas voluminizadora">
                 <h3>Plumones con marcas</h3>
                 <p class="precio">$22.75</p>
-                <button type="button" aria-label="Agregar Máscara de Pestañas al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="4" 
+                    data-name="Plumones con marcas" 
+                    data-price="22.75" 
+                    data-image="img/IMG-20250820-WA0006.jpg"
+                    aria-label="Agregar Plumones con marcas al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250820-WA0009.jpg" alt="Rubor en polvo natural">
                 <h3>Pinzas para pelo</h3>
                 <p class="precio">$19.99</p>
-                <button type="button" aria-label="Agregar Rubor en Polvo al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="5" 
+                    data-name="Pinzas para pelo" 
+                    data-price="19.99" 
+                    data-image="img/IMG-20250820-WA0009.jpg"
+                    aria-label="Agregar Pinzas para pelo al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250925-WA0029.jpg" alt="Delineador de ojos líquido">
                 <h3>Pinza para pelo con forma de rosa</h3>
                 <p class="precio">$15.25</p>
-                <button type="button" aria-label="Agregar Delineador Líquido al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="6" 
+                    data-name="Pinza para pelo con forma de rosa" 
+                    data-price="15.25" 
+                    data-image="img/IMG-20250925-WA0029.jpg"
+                    aria-label="Agregar Pinza para pelo con forma de rosa al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250925-WA0030.jpg" alt="Corrector de ojeras">
                 <h3>Espejo con forma de circulo</h3>
                 <p class="precio">$16.80</p>
-                <button type="button" aria-label="Agregar Corrector de Ojeras al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="7" 
+                    data-name="Espejo con forma de circulo" 
+                    data-price="16.80" 
+                    data-image="img/IMG-20250925-WA0030.jpg"
+                    aria-label="Agregar Espejo con forma de circulo al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250925-WA0031.jpg" alt="Polvo compacto matificante">
                 <h3>Tinta para labios</h3>
                 <p class="precio">$24.50</p>
-                <button type="button" aria-label="Agregar Polvo Compacto al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="8" 
+                    data-name="Tinta para labios" 
+                    data-price="24.50" 
+                    data-image="img/IMG-20250925-WA0031.jpg"
+                    aria-label="Agregar Tinta para labios al carrito">Comprar</button>
             </article>
 
             <article class="producto">
                 <img src="img/IMG-20250925-WA0032.jpg" alt="Iluminador en crema">
                 <h3>Pinzas con forma de corazon</h3>
                 <p class="precio">$28.99</p>
-                <button type="button" aria-label="Agregar Iluminador en Crema al carrito">Comprar</button>
+                <button type="button" class="buy-btn" 
+                    data-id="9" 
+                    data-name="Pinzas con forma de corazon" 
+                    data-price="28.99" 
+                    data-image="img/IMG-20250925-WA0032.jpg"
+                    aria-label="Agregar Pinzas con forma de corazon al carrito">Comprar</button>
             </article>
         </div>
     </section>
 </main>
+
+<!-- Contenedor de notificaciones -->
+<div id="notification-container"></div>
 
 <!-- Footer del sitio -->
 <footer>
@@ -114,5 +162,11 @@
     </div>
 </footer>
 
+<!-- Scripts MVC -->
+<script src="js/models/Product.js"></script>
+<script src="js/models/Cart.js"></script>
+<script src="js/views/CartView.js"></script>
+<script src="js/controllers/CartController.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
