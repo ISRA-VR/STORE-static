@@ -1,6 +1,5 @@
 <!--ISRAEL VALERDI ROMAN-->
 <!--DIANA GUADALUPE VELEZ SERRANO-->
-<!--OSVALDO CASIMIRO ZAMORA-->
 <!--26 DE SEPTIEMBRE DEL 2025-->
 <!DOCTYPE html>
 <html lang="es">
@@ -9,194 +8,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Cosméticos</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- Header principal -->
-<header class="bg-primary text-white py-3 shadow">
-    <div class="container">
-        <h1 class="text-center mb-3">Tienda de Cosméticos</h1>
-        <!-- Navegación principal -->
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Novedades</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Promociones</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Catálogo</a></li>
-                <li class="nav-item">
-                    <a class="nav-link text-white cart-link" href="#">
-                        🛒 Carrito <span id="cart-count" class="badge bg-danger cart-badge">0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<header>
+    <h1>Tienda de Cosméticos</h1>
+    <!-- Navegación principal -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#" class="cart-link">🛒 Carrito <span id="cart-count" class="cart-badge">0</span></a></li>
+        </ul>
+    </nav>
 </header>
 
 <!-- Sección principal de catálogo -->
-<main class="container my-5">
+<main>
     <section class="catalogo" id="catalogo">
-        <h2 class="text-center mb-4">Total productos: <span id="total-productos" class="badge bg-info">9</span></h2>
+        <h2>Total productos: <span id="total-productos">9</span></h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 productos">
+        <div class="productos">
             <!-- Cada artículo de producto -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250816-WA0001.jpg" class="card-img-top" alt="Base de maquillaje líquida">
-                    <div class="card-body">
-                        <h3 class="card-title">Balsamo color rojo</h3>
-                        <p class="precio text-success fw-bold">$25.99</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="1" 
-                            data-name="Balsamo color rojo" 
-                            data-price="25.99" 
-                            data-image="img/IMG-20250816-WA0001.jpg"
-                            aria-label="Agregar Balsamo color rojo al carrito">Comprar
-                        </button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250816-WA0001.jpg" alt="Base de maquillaje líquida">
+                <h3>Balsamo color rojo</h3>
+                <p class="precio">$25.99</p>
+                <button type="button" class="buy-btn" 
+                    data-id="1" 
+                    data-name="Balsamo color rojo" 
+                    data-price="25.99" 
+                    data-image="img/IMG-20250816-WA0001.jpg"
+                    aria-label="Agregar Balsamo color rojo al carrito">Comprar</button>
+            </article>
 
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250820-WA0004.jpg" class="card-img-top" alt="Labial mate de larga duración">
-                    <div class="card-body">
-                        <h3 class="card-title">Espejo con forma de corazon</h3>
-                        <p class="precio text-success fw-bold">$18.50</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="2" 
-                            data-name="Espejo con forma de corazon" 
-                            data-price="18.50" 
-                            data-image="img/IMG-20250820-WA0004.jpg"
+            <article class="producto">
+                <img src="img/IMG-20250820-WA0004.jpg" alt="Labial mate de larga duración">
+                <h3>Espejo con forma de corazon</h3>
+                <p class="precio">$18.50</p>
+                <button type="button" class="buy-btn" 
+                    data-id="2" 
+                    data-name="Espejo con forma de corazon" 
+                    data-price="18.50" 
+                    data-image="img/IMG-20250820-WA0004.jpg"
                     aria-label="Agregar Espejo con forma de corazon al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            </article>
 
-            <!-- Producto 3 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250820-WA0005.jpg" class="card-img-top" alt="Paleta de sombras para ojos">
-                    <div class="card-body">
-                        <h3 class="card-title">Esponja para desmaquillar</h3>
-                        <p class="precio text-success fw-bold">$32.00</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="3" 
-                            data-name="Esponja para desmaquillar" 
-                            data-price="32.00" 
-                            data-image="img/IMG-20250820-WA0005.jpg"
-                            aria-label="Agregar Esponja para desmaquillar al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250820-WA0005.jpg" alt="Paleta de sombras para ojos">
+                <h3>Esponja para desmaquillar</h3>
+                <p class="precio">$32.00</p>
+                <button type="button" class="buy-btn" 
+                    data-id="3" 
+                    data-name="Esponja para desmaquillar" 
+                    data-price="32.00" 
+                    data-image="img/IMG-20250820-WA0005.jpg"
+                    aria-label="Agregar Esponja para desmaquillar al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 4 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250820-WA0006.jpg" class="card-img-top" alt="Máscara de pestañas voluminizadora">
-                    <div class="card-body">
-                        <h3 class="card-title">Plumones con marcas</h3>
-                        <p class="precio text-success fw-bold">$22.75</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="4" 
-                            data-name="Plumones con marcas" 
-                            data-price="22.75" 
-                            data-image="img/IMG-20250820-WA0006.jpg"
-                            aria-label="Agregar Plumones con marcas al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250820-WA0006.jpg" alt="Máscara de pestañas voluminizadora">
+                <h3>Plumones con marcas</h3>
+                <p class="precio">$22.75</p>
+                <button type="button" class="buy-btn" 
+                    data-id="4" 
+                    data-name="Plumones con marcas" 
+                    data-price="22.75" 
+                    data-image="img/IMG-20250820-WA0006.jpg"
+                    aria-label="Agregar Plumones con marcas al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 5 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250820-WA0009.jpg" class="card-img-top" alt="Rubor en polvo natural">
-                    <div class="card-body">
-                        <h3 class="card-title">Pinzas para pelo</h3>
-                        <p class="precio text-success fw-bold">$19.99</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="5" 
-                            data-name="Pinzas para pelo" 
-                            data-price="19.99" 
-                            data-image="img/IMG-20250820-WA0009.jpg"
-                            aria-label="Agregar Pinzas para pelo al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250820-WA0009.jpg" alt="Rubor en polvo natural">
+                <h3>Pinzas para pelo</h3>
+                <p class="precio">$19.99</p>
+                <button type="button" class="buy-btn" 
+                    data-id="5" 
+                    data-name="Pinzas para pelo" 
+                    data-price="19.99" 
+                    data-image="img/IMG-20250820-WA0009.jpg"
+                    aria-label="Agregar Pinzas para pelo al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 6 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250925-WA0029.jpg" class="card-img-top" alt="Delineador de ojos líquido">
-                    <div class="card-body">
-                        <h3 class="card-title">Pinza para pelo con forma de rosa</h3>
-                        <p class="precio text-success fw-bold">$15.25</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="6" 
-                            data-name="Pinza para pelo con forma de rosa" 
-                            data-price="15.25" 
-                            data-image="img/IMG-20250925-WA0029.jpg"
-                            aria-label="Agregar Pinza para pelo con forma de rosa al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250925-WA0029.jpg" alt="Delineador de ojos líquido">
+                <h3>Pinza para pelo con forma de rosa</h3>
+                <p class="precio">$15.25</p>
+                <button type="button" class="buy-btn" 
+                    data-id="6" 
+                    data-name="Pinza para pelo con forma de rosa" 
+                    data-price="15.25" 
+                    data-image="img/IMG-20250925-WA0029.jpg"
+                    aria-label="Agregar Pinza para pelo con forma de rosa al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 7 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250925-WA0030.jpg" class="card-img-top" alt="Corrector de ojeras">
-                    <div class="card-body">
-                        <h3 class="card-title">Espejo con forma de circulo</h3>
-                        <p class="precio text-success fw-bold">$16.80</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="7" 
-                            data-name="Espejo con forma de circulo" 
-                            data-price="16.80" 
-                            data-image="img/IMG-20250925-WA0030.jpg"
-                            aria-label="Agregar Espejo con forma de circulo al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250925-WA0030.jpg" alt="Corrector de ojeras">
+                <h3>Espejo con forma de circulo</h3>
+                <p class="precio">$16.80</p>
+                <button type="button" class="buy-btn" 
+                    data-id="7" 
+                    data-name="Espejo con forma de circulo" 
+                    data-price="16.80" 
+                    data-image="img/IMG-20250925-WA0030.jpg"
+                    aria-label="Agregar Espejo con forma de circulo al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 8 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250925-WA0031.jpg" class="card-img-top" alt="Polvo compacto matificante">
-                    <div class="card-body">
-                        <h3 class="card-title">Tinta para labios</h3>
-                        <p class="precio text-success fw-bold">$24.50</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="8" 
-                            data-name="Tinta para labios" 
-                            data-price="24.50" 
-                            data-image="img/IMG-20250925-WA0031.jpg"
-                            aria-label="Agregar Tinta para labios al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250925-WA0031.jpg" alt="Polvo compacto matificante">
+                <h3>Tinta para labios</h3>
+                <p class="precio">$24.50</p>
+                <button type="button" class="buy-btn" 
+                    data-id="8" 
+                    data-name="Tinta para labios" 
+                    data-price="24.50" 
+                    data-image="img/IMG-20250925-WA0031.jpg"
+                    aria-label="Agregar Tinta para labios al carrito">Comprar</button>
+            </article>
 
-            <!-- Producto 9 -->
-            <div class="col">
-                <article class="producto card h-100 shadow-sm">
-                    <img src="img/IMG-20250925-WA0032.jpg" class="card-img-top" alt="Iluminador en crema">
-                    <div class="card-body">
-                        <h3 class="card-title">Pinzas con forma de corazon</h3>
-                        <p class="precio text-success fw-bold">$28.99</p>
-                        <button type="button" class="btn btn-primary w-100 buy-btn" 
-                            data-id="9" 
-                            data-name="Pinzas con forma de corazon" 
-                            data-price="28.99" 
-                            data-image="img/IMG-20250925-WA0032.jpg"
-                            aria-label="Agregar Pinzas con forma de corazon al carrito">Comprar</button>
-                    </div>
-                </article>
-            </div>
+            <article class="producto">
+                <img src="img/IMG-20250925-WA0032.jpg" alt="Iluminador en crema">
+                <h3>Pinzas con forma de corazon</h3>
+                <p class="precio">$28.99</p>
+                <button type="button" class="buy-btn" 
+                    data-id="9" 
+                    data-name="Pinzas con forma de corazon" 
+                    data-price="28.99" 
+                    data-image="img/IMG-20250925-WA0032.jpg"
+                    aria-label="Agregar Pinzas con forma de corazon al carrito">Comprar</button>
+            </article>
         </div>
     </section>
 </main>
@@ -205,24 +148,19 @@
 <div id="notification-container"></div>
 
 <!-- Footer del sitio -->
-<footer class="bg-dark text-white py-4 mt-5">
-    <div class="container">
-        <div class="footer-content text-center">
-            <p class="mb-3">&copy; 2025 Tienda de Cosméticos - Todos los derechos reservados</p>
-            <!-- Enlaces de interés -->
-            <nav>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Política de Privacidad</a></li>
-                    <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Términos y Condiciones</a></li>
-                    <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Tienda de Cosméticos - Todos los derechos reservados</p>
+        <!-- Enlaces de interés -->
+        <nav>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
 </footer>
-
-<!-- Bootstrap 5 JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Scripts MVC -->
 <script src="../models/Product.js"></script>
@@ -230,5 +168,19 @@
 <script src="js/CartView.js"></script>
 <script src="../controllers/CartController.js"></script>
 <script src="js/app.js"></script>
+
+<!-- Script simple para eliminar items del carrito -->
+<script>
+document.addEventListener('click', function(e) {
+    const btn = e.target.closest('.btn-delete');
+    if (!btn || !btn.dataset.productId) return;
+    
+    // Usar el controlador global para eliminar
+    if (window.cartController) {
+        window.cartController.cart.removeItem(btn.dataset.productId);
+        window.cartController.updateView();
+    }
+});
+</script>
 </body>
 </html>
