@@ -57,4 +57,10 @@ class Cart {
         this.items = [];
         this.saveToStorage();
     }
+
+    // Elimina un producto del carrito
+    removeItem(productId) {
+        this.items = this.items.filter(item => String(item.id) !== String(productId));
+        this.saveToStorage();
+    }
 }
